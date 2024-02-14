@@ -1,0 +1,51 @@
+// =============================================================================
+// DLO - DEVICE LOGIC's MAIN MODULE
+// =============================================================================
+
+onUplinkRestore_up_state() {
+
+}
+
+
+onUplinkApply_down_control() {
+  #log("Switch LED %d", DDE_down_control_ledSwitch);
+  
+  if(DDE_down_control_ledSwitch == 1) {
+	NRF91_SetLed(CO_GREEN)
+  } else {
+	NRF91_SetLed(CO_BLACK)
+  }
+
+  // return the current led state:
+  DDE_up_state_ledState = DDE_down_control_ledSwitch;
+  DDE_up_state_flush();
+}
+
+onUplinkEvent(event, param) {
+    switch(event)
+	{
+		// App setup initialized - ready to run application!
+		case UPLINK_EV_READY:
+		{
+			#log("uplink - ready!");
+		}
+		// Not ready to run app - waiting for some setup data from backend
+		case UPLINK_EV_WAITING:
+		{
+			#log("?uplink - waiting for initial data from backend (%x)",param);
+		}
+	}
+}
+
+#callback appInit()
+{
+  ddeInit();
+  uplinkInit(UPLINK_ONLINE);
+}
+// ---
+// application entry point
+// ---
+main()
+{
+  salve(appInit);
+}

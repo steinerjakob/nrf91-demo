@@ -1,0 +1,158 @@
+{
+	"2.0.0": {
+		"config0": {
+			"name": "config0",
+			"title": "up_state",
+			"containerType": "cx",
+			"volatile": false,
+			"transferDirection": "up",
+			"fieldCount": 1,
+			"knownNames": [
+				"up_state"
+			],
+			"libraries": [],
+			"arrays": {},
+			"fields": [
+				{
+					"id": "ledstate",
+					"name": "ledState",
+					"library": null,
+					"byteOffset": 0,
+					"byteSize": 1,
+					"type": "uint8",
+					"title": null,
+					"arrayRef": null
+				}
+			],
+			"size": 1
+		},
+		"histdata0": {
+			"name": "histdata0",
+			"title": "balbalalb",
+			"containerType": "hx",
+			"volatile": false,
+			"transferDirection": "up",
+			"fieldCount": 1,
+			"knownNames": [
+				"balbalalb"
+			],
+			"libraries": [],
+			"arrays": {},
+			"fields": [
+				{
+					"id": "sinwave",
+					"name": "sinwave",
+					"library": null,
+					"byteOffset": 0,
+					"byteSize": 2,
+					"type": "uint16",
+					"title": null,
+					"arrayRef": null
+				}
+			],
+			"size": 2
+		},
+		"config6": {
+			"name": "config6",
+			"title": "down_control",
+			"containerType": "cx",
+			"volatile": false,
+			"transferDirection": "down",
+			"fieldCount": 1,
+			"knownNames": [
+				"down_control"
+			],
+			"libraries": [],
+			"arrays": {},
+			"fields": [
+				{
+					"id": "ledswitch",
+					"name": "ledSwitch",
+					"library": null,
+					"byteOffset": 0,
+					"byteSize": 1,
+					"type": "uint8",
+					"title": null,
+					"arrayRef": null
+				}
+			],
+			"size": 1
+		},
+		"configB": {
+			"name": "configB",
+			"title": "relations",
+			"containerType": "cb",
+			"volatile": false,
+			"transferDirection": "backend-only",
+			"fieldCount": 1,
+			"knownNames": [
+				"relations"
+			],
+			"libraries": [],
+			"arrays": {},
+			"fields": [
+				{
+					"id": "testrelation",
+					"name": "testRelation",
+					"library": null,
+					"byteOffset": 0,
+					"byteSize": 4,
+					"type": "float32",
+					"title": null,
+					"arrayRef": null
+				}
+			],
+			"size": 4
+		}
+	},
+	"1.0.0": {
+		"config0": {
+			"name": "config0",
+			"containerType": "cx",
+			"title": "up_state",
+			"transferDirection": "up+",
+			"fieldCount": 1,
+			"knownNames": [
+				"up_state"
+			],
+			"libraries": [],
+			"arrays": {},
+			"fields": [
+				{
+					"id": "ledstate",
+					"name": "ledState",
+					"library": null,
+					"byteOffset": 0,
+					"byteSize": 1,
+					"type": "uint8",
+					"arrayRef": null
+				}
+			],
+			"size": 1
+		},
+		"config6": {
+			"name": "config6",
+			"containerType": "cx",
+			"title": "down_control",
+			"transferDirection": "down+",
+			"fieldCount": 1,
+			"knownNames": [
+				"down_control"
+			],
+			"libraries": [],
+			"arrays": {},
+			"fields": [
+				{
+					"id": "ledswitch",
+					"name": "ledSwitch",
+					"library": null,
+					"byteOffset": 0,
+					"byteSize": 1,
+					"type": "uint8",
+					"arrayRef": null
+				}
+			],
+			"size": 1
+		}
+	}
+}
